@@ -13,10 +13,13 @@ const Layout = ({ children, data }) => (
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
-    />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    >
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
+    </Helmet>
+      <Header siteTitle={data.site.siteMetadata.title} />
     <div
       style={{
+        fontfamily: 'Roboto',
         margin: '0 auto',
         maxWidth: 960,
         padding: '0px 1.0875rem 1.45rem',
