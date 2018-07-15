@@ -1,12 +1,17 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
 
-export default ({ data }) => {
-  return (
-    <div>
-      <div>Title</div>
-      <div>Exerpt</div>
-      <div>Link to actual post</div>
-    </div>
-  )
-}
+const StyledAnchor = styled.a`
+  display: block;
+`
+
+export default ({ pathContext: { data }}) => (
+  <div>
+    <h1>{data.title}</h1>
+    <p>{data.content}</p>
+    <StyledAnchor href={data.href}>Full article</StyledAnchor>
+    <Link to="/blog/">Back to Blog</Link>
+  </div>
+)
+

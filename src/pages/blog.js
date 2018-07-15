@@ -8,7 +8,6 @@ const BlogPage = ({ data }) => {
   return (
     <div>
       <h1>Blog Page</h1>
-      <p>Welcome to page 2</p>
       <ItemCardWrapper>
         {posts && posts.map(post => <ItemCard key={post.id} data={post} />)}
       </ItemCardWrapper>

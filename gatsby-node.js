@@ -11,6 +11,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             childrenBlogJson {
               id
               title
+              author
+              dateAdded
+              content
+              href
             }
           }
         }

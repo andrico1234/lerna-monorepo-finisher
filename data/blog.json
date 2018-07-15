@@ -5,7 +5,7 @@
     "author": "Me",
     "dateAdded": "12/12/18",
     "subtitle": "The subtitle",
-    "content": "Lorem Ipsum",
+    "content": "Kicking back at React Europe with bunch of devvos? You’re all enjoying the free food, great talks and excellent wifi. But sometimes it’s just not enough. Soaking up the knowledge is one thing, but wouldn’t you rather be soaking up some sun and sipping a cool one with the lads and lasses. Let’s make a compromise. Grab one of the free conference beers, have the rules ready, and play along;",
     "href": "https://medium.com/@andricokaroulla/the-react-conference-drinking-game-7a996bfbef3"
   },
   {
@@ -14,7 +14,7 @@
     "author": "Me 2",
     "dateAdded": "09/12/18",
     "subtitle": "The subtitle 2: Electirc Boogaloo",
-    "content": "Lorem Ipsum",
+    "content": "ES2018+, a.k.a ESnext, a.k.a ECMA-262 is giving us devs some shiny new toys. Every couple of months the ECMAscript committee meets up. It’s usually an opportunity for the big man Brendan Eich to catch up with old pals, and if there’s still time afterwards, discuss the future of JavaScript. You know, that programming language that 12 million developers use professionally, at least according to this website. Well, the committee is meeting in July and there are some big items on the agenda. As well as a series of discussions regarding the next steps for the language, there’s also a proposal to move JavaScript decorators to stage 3.",
     "href": "https://codeburst.io/no-need-to-wait-for-the-holidays-start-decorating-now-67b9dabd60d7"
   },
   {
@@ -23,7 +23,7 @@
     "author": "Me",
     "dateAdded": "12/12/18",
     "subtitle": "The subtitle",
-    "content": "Lorem Ipsum",
+    "content": "One of Web Development’s biggest strengths and weaknesses is its approach to modularity. A key programming mantra is to choose something (a function, a package) to do a single job and to do it well. The downside to this approach can mean a single project can be juggling between dozens of separate technologies and concepts, each focusing on something specific. So choosing Apollo Client to handle my local state as well my remote data seems like a no brainer. Why deal with Redux’s boilerplate and idioms when I’ve already got Apollo/GraphQL set up to get data from my backend? While this article is going to deal with setting up Apollo to handle local state, it’s not going to be an introduction to the tech. (This legit howtographql tutorial is a good shout for that).",
     "href": "https://itnext.io/managing-local-state-with-apollo-client-3be522258645"
   },
   {
@@ -32,7 +32,7 @@
     "author": "Me 2",
     "dateAdded": "09/12/18",
     "subtitle": "The subtitle 2: Electirc Boogaloo",
-    "content": "Lorem Ipsum",
+    "content": "Note: This article deals with utilizing Apollo’s brand new Query and Mutation components, instead of the HOCs. For those that have read the original article here, be aware that the two articles are very similar. One of Web Development’s biggest strengths — and weaknesses — is its approach to modularity. A key programming mantra is to choose something (a function, a package) to do a single job and to do it well. The downside to this approach is that a single project can be juggling dozens of separate technologies and concepts, each focusing on something specific.ß So choosing Apollo Client to handle my local state as well as my remote data seems like a no brainer. Why deal with Redux’s boilerplate and idioms when I’ve already got Apollo/GraphQL set up to get data from my backend? While this article is going to deal with setting up Apollo to handle local state, it’s not going to be an introduction to the tech. (This legit howtographql tutorial is a good start for that). ",
     "href": "https://medium.freecodecamp.org/updated-for-apollo-v2-1-managing-local-state-with-apollo-d1882f2fbb7"
   }
 ]
