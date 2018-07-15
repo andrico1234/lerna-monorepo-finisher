@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1234",
+    "title": "React Drinking Game",
+    "author": "Me",
+    "dateAdded": "12/12/18",
+    "subtitle": "The subtitle",
+    "content": "Lorem Ipsum",
+    "href": "https://medium.com/@andricokaroulla/the-react-conference-drinking-game-7a996bfbef3"
+  },
+  {
+    "id": "2345",
+    "title": "JavaScript Decorators",
+    "author": "Me 2",
+    "dateAdded": "09/12/18",
+    "subtitle": "The subtitle 2: Electirc Boogaloo",
+    "content": "Lorem Ipsum",
+    "href": "https://codeburst.io/no-need-to-wait-for-the-holidays-start-decorating-now-67b9dabd60d7"
+  },
+  {
+    "id": "3456",
+    "title": "Apollo HOCs",
+    "author": "Me",
+    "dateAdded": "12/12/18",
+    "subtitle": "The subtitle",
+    "content": "Lorem Ipsum",
+    "href": "https://itnext.io/managing-local-state-with-apollo-client-3be522258645"
+  },
+  {
+    "id": "4567",
+    "title": "Apollo Components",
+    "author": "Me 2",
+    "dateAdded": "09/12/18",
+    "subtitle": "The subtitle 2: Electirc Boogaloo",
+    "content": "Lorem Ipsum",
+    "href": "https://medium.freecodecamp.org/updated-for-apollo-v2-1-managing-local-state-with-apollo-d1882f2fbb7"
+  }
+]
