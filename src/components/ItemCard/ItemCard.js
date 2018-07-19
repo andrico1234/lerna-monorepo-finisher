@@ -39,9 +39,9 @@ const CardHeading = styled.p`
   padding: 5px;
 `
 
-export default ({ data }) => (
+export default ({ data, slug }) => (
   <Card>
-    <StyledLink to={`/post/${data.id}`}>
+    <StyledLink to={`/${slug}/${data.id}`}>
       <CardImage />
       <CardHeading>
         {data.title}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ahd2345",
+    "title": "Tshirts",
+    "price": "£10.99",
+    "dateAdded": "12/12/18",
+    "description": "Thick Cotton perfect for those sweaty summer nights"
+  },
+  {
+    "id": "4567sidji4",
+    "title": "Underpants",
+    "price": "£3.99",
+    "dateAdded": "12/12/18",
+    "description": "Perfect for those who smuggle budgies"
+  },
+  {
+    "id": "1233ifj3i4",
+    "title": "Everything about Programming: Book",
+    "price": "£10.99",
+    "dateAdded": "12/12/18",
+    "description": "Learn every language, concept and technology in this easy to digest book. Total Pages: 28,490"
+  }
+]

@@ -31,7 +31,7 @@
     "title": "Apollo Components",
     "author": "Me 2",
     "dateAdded": "09/12/18",
-    "subtitle": "The subtitle 2: Electirc Boogaloo",
+    "subtitle": "The subtitle 2: Electric Boogaloo",
     "content": "Note: This article deals with utilizing Apollo’s brand new Query and Mutation components, instead of the HOCs. For those that have read the original article here, be aware that the two articles are very similar. One of Web Development’s biggest strengths — and weaknesses — is its approach to modularity. A key programming mantra is to choose something (a function, a package) to do a single job and to do it well. The downside to this approach is that a single project can be juggling dozens of separate technologies and concepts, each focusing on something specific.ß So choosing Apollo Client to handle my local state as well as my remote data seems like a no brainer. Why deal with Redux’s boilerplate and idioms when I’ve already got Apollo/GraphQL set up to get data from my backend? While this article is going to deal with setting up Apollo to handle local state, it’s not going to be an introduction to the tech. (This legit howtographql tutorial is a good start for that). ",
     "href": "https://medium.freecodecamp.org/updated-for-apollo-v2-1-managing-local-state-with-apollo-d1882f2fbb7"
   }

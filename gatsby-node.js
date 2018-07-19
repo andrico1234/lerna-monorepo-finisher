@@ -5,17 +5,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
   return graphql(`
     {
-      allFile {
+      allShoppingJson {
         edges {
           node {
-            childrenBlogJson {
-              id
-              title
-              author
-              dateAdded
-              content
-              href
-            }
+            id
+            title
+            price
+            dateAdded
+            description
           }
         }
       }
@@ -25,14 +22,45 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       throw result.errors
     }
 
-    result.data.allFile.edges[0].node.childrenBlogJson.map(item => {
+    result.data.allShoppingJson.edges.map(edge => {
       createPage({
-        path: `post/${item.id}`,
-        component: path.resolve('./src/pages/blogItem.js'),
+        path: `item/${edge.node.id}`,
+        component: path.resolve('./src/pages/shoppingItem.js'),
         context: {
-          data: item,
+          data: edge.node,
+        },
+      })
+    })
+
+    return graphql(`
+    {
+      allBlogJson {
+        edges {
+          node {
+            id
+            title
+            author
+            dateAdded
+            content
+            href
+          }
         }
+      }
+    }
+    `).then(result => {
+      if (result.errors) {
+        throw result.errors
+      }
+
+      result.data.allBlogJson.edges.map(edge => {
+        createPage({
+          path: `post/${edge.node.id}`,
+          component: path.resolve('./src/pages/blogItem.js'),
+          context: {
+            data: edge.node,
+          },
+        })
       })
     })
   })
-};
+}

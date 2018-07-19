@@ -3,13 +3,13 @@ import Link from 'gatsby-link'
 import { ItemCard, ItemCardWrapper } from '../components/ItemCard'
 
 const BlogPage = ({ data }) => {
-  const posts = data.allFile.edges[0].node.childrenBlogJson
+  const edges = data.allBlogJson.edges
 
   return (
     <div>
       <h1>Blog Page</h1>
       <ItemCardWrapper>
-        {posts && posts.map(post => <ItemCard key={post.id} data={post} />)}
+        {edges && edges.map(edge => <ItemCard key={edge.node.id} data={edge.node} slug="post" />)}
       </ItemCardWrapper>
       <Link to="/">Go back to the shop</Link>
     </div>
@@ -20,13 +20,11 @@ export default BlogPage
 
 export const query = graphql`
   query BlogPostsQuery {
-    allFile {
+    allBlogJson {
       edges {
         node {
-          childrenBlogJson {
-            id
-            title
-          }
+          id
+          title
         }
       }
     }
