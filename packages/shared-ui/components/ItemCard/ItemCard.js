@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import theme from '../../theme'
+import { theme } from '../../'
 
 const Card = styled.div`
   background: ${theme.white};
