@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import { ItemCard, ItemCardWrapper } from '@lerna-monorepo/shared-ui'
 
 const BlogPage = ({ data }) => {
@@ -11,7 +10,7 @@ const BlogPage = ({ data }) => {
       <ItemCardWrapper>
         {edges && edges.map(edge => <ItemCard key={edge.node.id} data={edge.node} slug="post" />)}
       </ItemCardWrapper>
-      <Link to="/">Go back to the shop</Link>
+      <a href={`http://${process.env.SHOP_URL}`}>Go to Shop</a>
     </div>
   )
 }
