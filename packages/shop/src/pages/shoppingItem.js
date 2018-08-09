@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Button } from '../../packages/shared-ui'
+import { Button } from '@lerna-monorepo/shared-ui'
 
 export default ({ pathContext: { data }}) => (
   <div>
