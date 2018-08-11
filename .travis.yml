@@ -1,3 +1,12 @@
 language: node_js
 node_js:
   - "8.11.2"
+
+cache: yarn
+
+install:
+  - yarn global add lerna jest
+  - lerna bootstrap
+
+script:
+  - yarn test
