@@ -7,7 +7,7 @@ You'll be learning how to use Lerna to create separate packages in the same repo
 separate package for shared components and utilities.
 
 CI/CD will also be covered, allowing you to share a pipeline script that tests, lints, builds and deploys
-each of your monorepo packages. No (tbd) will be used to handle deployments 
+each of your monorepo packages. Travis CI will be to handle our CI pipeline. No (tbd) will be used to handle deployments 
 
 The application has been scaffolded using Gatsby TODO: add link
 ## Install
