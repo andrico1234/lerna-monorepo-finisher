@@ -1,0 +1,16 @@
+{
+  "transform": {
+    ".(js|jsx)": "babel-jest"
+  },
+  "moduleNameMapper": {
+    "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js"
+  },
+  "testRegex": "(\\.(test|spec))\\.(jsx|js)$",
+  "testPathIgnorePatterns": [
+    "/node_modules/",
+    "/.cache/"
+  ],
+  "setupFiles": [
+    "./jest-setup.js"
+  ]
+}

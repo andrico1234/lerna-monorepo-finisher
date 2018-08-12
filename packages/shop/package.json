@@ -25,7 +25,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop -p 8001",
     "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest test --config ../../jest-config.json"
   },
   "devDependencies": {
     "prettier": "^1.12.0"

@@ -31,19 +31,6 @@
     "run:all": "npm-run-all --parallel run:blog run:shop",
     "test": "jest test"
   },
-  "jest": {
-    "transform": {
-      ".(js|jsx)": "babel-jest"
-    },
-    "testRegex": "(\\.(test|spec))\\.(jsx|js)$",
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/.cache/"
-    ],
-    "setupFiles": [
-      "./jest-setup.js"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
