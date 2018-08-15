@@ -1,10 +1,10 @@
 {
   "name": "@lernamonorepo/shop",
   "description": "Lerna monorepo finisher",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Andrico Karoulla <karoulla.andrico@gmail.com>",
   "dependencies": {
-    "@lernamonorepo/blog": "^1.0.1",
+    "@lernamonorepo/blog": "^1.0.2",
     "@lernamonorepo/shared-ui": "^1.0.1",
     "dotenv": "^6.0.0",
     "gatsby": "^1.9.247",

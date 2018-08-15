@@ -1,7 +1,7 @@
 {
   "name": "@lernamonorepo/blog",
   "description": "Lerna monorepo finisher",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Andrico Karoulla <karoulla.andrico@gmail.com>",
   "dependencies": {
     "@lerna-monorepo/shared-ui": "^1.0.1",
