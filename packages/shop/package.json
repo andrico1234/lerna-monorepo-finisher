@@ -1,11 +1,11 @@
 {
-  "name": "@lerna-monorepo/shop",
+  "name": "@lernamonorepo/shop",
   "description": "Lerna monorepo finisher",
   "version": "1.0.1",
   "author": "Andrico Karoulla <karoulla.andrico@gmail.com>",
   "dependencies": {
-    "@lerna-monorepo/blog": "^1.0.1",
-    "@lerna-monorepo/shared-ui": "^1.0.1",
+    "@lernamonorepo/blog": "^1.0.1",
+    "@lernamonorepo/shared-ui": "^1.0.1",
     "dotenv": "^6.0.0",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
