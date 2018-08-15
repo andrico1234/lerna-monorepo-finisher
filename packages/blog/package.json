@@ -1,5 +1,5 @@
 {
-  "name": "@lernamonorepo/blog",
+  "name": "@lerna-monorepo/blog",
   "description": "Lerna monorepo finisher",
   "version": "1.0.2",
   "author": "Andrico Karoulla <karoulla.andrico@gmail.com>",
