@@ -1,5 +1,5 @@
 {
-  "name": "@lerna-monorepo/shared-ui",
+  "name": "@lerna-monorepo\/shared-ui",
   "description": "Lerna monorepo finisher",
   "version": "1.0.2",
   "author": "Andrico Karoulla <karoulla.andrico@gmail.com>",
