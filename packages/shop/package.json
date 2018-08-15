@@ -1,11 +1,11 @@
 {
   "name": "@lerna-monorepo/shop",
   "description": "Lerna monorepo finisher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Andrico Karoulla <karoulla.andrico@gmail.com>",
   "dependencies": {
-    "@lerna-monorepo/blog": "^1.0.0",
-    "@lerna-monorepo/shared-ui": "^1.0.0",
+    "@lerna-monorepo/blog": "^1.0.1",
+    "@lerna-monorepo/shared-ui": "^1.0.1",
     "dotenv": "^6.0.0",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
@@ -34,6 +34,7 @@
   "engines": {
     "node": "8.11.2"
   },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
