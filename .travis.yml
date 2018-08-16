@@ -1,20 +1,28 @@
 language: node_js
 node_js:
-  - "8.11.2"
+- 8.11.2
+env:
+  global:
+    - secure: KSpN/JsfixgsPP2c4IFo2oOUiopbncRWuLHKUDXAloYnehIToZatkyZFc/+O3UPH8AptMuhB6huXT9s2FnkejTPKaaFtv6UZTyRMmhFiZwiXVrxG3pBwW2oc7tyU4nSp51Rd521bcM6RNRJrmg+S6novA/8tcQiKJqkKfhzoQo89veugKE7hA9f2x3bM1v7Z8HYjMs7SPwayYKXT3Fkcn4uWuYHU716ToiUqPN2adtX/T4ZkNKP3ttkheAydPPBjlGT/8r9KbmssQH7vjgKlqzHjLYxeN0YObkZ0qkY2b1GXd6JnDnlXwXh52ig4YY+I1+1kjR/8OegY9+WkxGpfGTvreocZDCdySkD8hH2gM7UiQxIGvMIWfhlAyNk4dNOWSm84AjexDUhSoLX6BC7zhuN/Y99Mq87c9sekHQ2ttydmLKt2BhLLhV2MEZgKlAm+FCtFqXENIxgzVTJafIa2ItuxogTW13CM9K+x6lzvcfbHRVSoRQ2+2orqDfQxA9pzsjnA3hVhYByGd2wtOsAwDfB4izCw/GQ6UDLdi5IRk1Mt0qLI2DWMYTWZx9/gvEGbFAzG8vcz36MyZw2MFcETPBYrzM2SCrLubKWVMWTCzAhq/ebn55vll+RxEjt85meQg/kefak+u9lcjifLQF4PgLSbAUTXhNmPHf5XO5j+Wjo=
 
 cache: yarn
 
 install:
-  - yarn global add lerna jest
-  - lerna bootstrap
+- yarn global add lerna jest
+- lerna bootstrap
 
 matrix:
   include:
-    - name: "Blog Pipeline"
-      env: PACKAGE_LOCATION=packages/blog
-    - name: "Shop Pipeline"
-      env: PACKAGE_LOCATION=packages/shop
+  - name: Blog Pipeline
+    env: PACKAGE_LOCATION=packages/blog
+  - name: Shop Pipeline
+    env: PACKAGE_LOCATION=packages/shop
 
 script:
-  - cd $PACKAGE_LOCATION
-  - yarn test
+- cd $PACKAGE_LOCATION
+- yarn test
+
+deploy:
+  provider: heroku
+  api_key: HEROKU_API
+  skip_cleanup: true
