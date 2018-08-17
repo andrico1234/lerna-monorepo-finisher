@@ -1,120 +1,19 @@
-0 silly input [ 'publish' ]
-1 silly flags { _: [ 'publish' ], 'reject-cycles': false, rejectCycles: false }
+0 silly input []
+1 silly flags { _: [ 'bootstrap' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   args: [] }
 2 verbose rootPath /Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher
 3 info version 2.11.0
-4 silly isInitialized
-5 silly isInitialized true
-6 silly existsSync /Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/VERSION
-7 silly initialize attempt
-8 info current version 1.0.0
-9 silly isDetachedHead
-10 silly getCurrentBranch
-11 verbose getCurrentBranch master
-12 verbose isDetachedHead false
-13 silly getCurrentBranch
-14 verbose getCurrentBranch master
-15 silly getUpdates
-16 info Checking for updated packages...
-17 silly hasTags
-18 verbose hasTags false
-19 info Comparing with initial commit.
-20 verbose updated @lerna-monorepo/blog
-21 verbose updated @lerna-monorepo/shared-ui
-22 verbose updated @lerna-monorepo/shop
-23 info Checking for prereleased packages...
-24 silly collectDependents
-25 silly isPackageDependentOf @lerna-monorepo/blog @lerna-monorepo/blog
-26 silly isPackageDependentOf @lerna-monorepo/shared-ui @lerna-monorepo/blog
-27 silly isPackageDependentOf @lerna-monorepo/blog @lerna-monorepo/shared-ui
-28 verbose dependent @lerna-monorepo/blog depends on @lerna-monorepo/shared-ui
-29 silly isPackageDependentOf @lerna-monorepo/blog @lerna-monorepo/shop
-30 silly isPackageDependentOf @lerna-monorepo/shared-ui @lerna-monorepo/shop
-31 silly isPackageDependentOf @lerna-monorepo/shared-ui @lerna-monorepo/blog
-32 silly isPackageDependentOf @lerna-monorepo/shared-ui @lerna-monorepo/shared-ui
-33 silly isPackageDependentOf @lerna-monorepo/shared-ui @lerna-monorepo/shop
-34 silly isPackageDependentOf @lerna-monorepo/shop @lerna-monorepo/blog
-35 verbose dependent @lerna-monorepo/shop depends on @lerna-monorepo/blog
-36 silly isPackageDependentOf @lerna-monorepo/shop @lerna-monorepo/shared-ui
-37 verbose dependent @lerna-monorepo/shop depends on @lerna-monorepo/shared-ui
-38 silly isPackageDependentOf @lerna-monorepo/shop @lerna-monorepo/shop
-39 silly isPackageDependentOf @lerna-monorepo/blog @lerna-monorepo/shop
-40 silly isPackageDependentOf @lerna-monorepo/shared-ui @lerna-monorepo/shop
-41 silly collectUpdates
-42 verbose has filtered update @lerna-monorepo/blog
-43 verbose has filtered update @lerna-monorepo/shared-ui
-44 verbose has filtered update @lerna-monorepo/shop
-45 silly initialize success
-46 silly execute attempt
-47 silly addFile /Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/lerna.json
-48 silly runScriptSync preversion lerna-monorepo-finisher
-49 silly runScriptSync preversion @lerna-monorepo/blog
-50 silly runScriptSync version @lerna-monorepo/blog
-51 silly runScriptSync preversion @lerna-monorepo/shared-ui
-52 silly runScriptSync version @lerna-monorepo/shared-ui
-53 silly runScriptSync preversion @lerna-monorepo/shop
-54 silly runScriptSync version @lerna-monorepo/shop
-55 silly runScriptSync version lerna-monorepo-finisher
-56 silly addFile /Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/packages/blog/package.json
-57 silly addFile /Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/packages/shared-ui/package.json
-58 silly addFile /Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/packages/shop/package.json
-59 silly commit v1.0.1
-60 verbose commit [ 'commit', '--no-verify', '-m', 'v1.0.1' ]
-61 silly addTag v1.0.1
-62 silly runScriptSync postversion @lerna-monorepo/blog
-63 silly runScriptSync postversion @lerna-monorepo/shared-ui
-64 silly runScriptSync postversion @lerna-monorepo/shop
-65 silly runScriptSync postversion lerna-monorepo-finisher
-66 info publish Publishing packages to npm...
-67 silly existsSync /Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/packages/blog/scripts/prepublish.js
-68 verbose execScript No prepublish script found at /Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/packages/blog/scripts/prepublish.js
-69 silly existsSync /Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/packages/shared-ui/scripts/prepublish.js
-70 verbose execScript No prepublish script found at /Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/packages/shared-ui/scripts/prepublish.js
-71 silly existsSync /Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/packages/shop/scripts/prepublish.js
-72 verbose execScript No prepublish script found at /Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/packages/shop/scripts/prepublish.js
-73 verbose publishing @lerna-monorepo/shared-ui
-74 silly publishTaggedInDir latest shared-ui
-75 silly getExecOpts { cwd: '/Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/packages/shared-ui' }
-76 error publish Retrying failed publish: @lerna-monorepo/shared-ui
-77 verbose publish error undefined
-78 verbose publishing @lerna-monorepo/shared-ui
-79 silly publishTaggedInDir latest shared-ui
-80 silly getExecOpts { cwd: '/Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/packages/shared-ui' }
-81 error publish Retrying failed publish: @lerna-monorepo/shared-ui
-82 verbose publish error undefined
-83 verbose publishing @lerna-monorepo/shared-ui
-84 silly publishTaggedInDir latest shared-ui
-85 silly getExecOpts { cwd: '/Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/packages/shared-ui' }
-86 error publish Retrying failed publish: @lerna-monorepo/shared-ui
-87 verbose publish error undefined
-88 verbose publishing @lerna-monorepo/shared-ui
-89 silly publishTaggedInDir latest shared-ui
-90 silly getExecOpts { cwd: '/Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/packages/shared-ui' }
-91 error publish Retrying failed publish: @lerna-monorepo/shared-ui
-92 verbose publish error undefined
-93 verbose publishing @lerna-monorepo/shared-ui
-94 silly publishTaggedInDir latest shared-ui
-95 silly getExecOpts { cwd: '/Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/packages/shared-ui' }
-96 error publish Ran out of retries while publishing @lerna-monorepo/shared-ui Error: Command failed: yarn publish --tag latest --new-version 1.0.1
-96 error publish error Couldn't publish package.
-96 error publish yarn publish v1.6.0
-96 error publish [1/4] Bumping version...
-96 error publish info Current version: 1.0.1
-96 error publish [2/4] Logging in...
-96 error publish [3/4] Publishing...
-96 error publish info Visit https://yarnpkg.com/en/docs/cli/publish for documentation about this command.
-96 error publish
-96 error publish     at Promise.all.then.arr (/Users/Home/.config/yarn/global/node_modules/execa/index.js:236:11)
-96 error publish     at <anonymous>
-96 error publish     at process._tickCallback (internal/process/next_tick.js:188:7)
-97 error execute callback with error
-98 error Error: Command failed: yarn publish --tag latest --new-version 1.0.1
-98 error error Couldn't publish package.
-98 error yarn publish v1.6.0
-98 error [1/4] Bumping version...
-98 error info Current version: 1.0.1
-98 error [2/4] Logging in...
-98 error [3/4] Publishing...
-98 error info Visit https://yarnpkg.com/en/docs/cli/publish for documentation about this command.
-98 error
-98 error     at Promise.all.then.arr (/Users/Home/.config/yarn/global/node_modules/execa/index.js:236:11)
-98 error     at <anonymous>
+4 silly existsSync /Users/Home/Documents/Coding/lerna-monorepo-blog/lerna-monorepo-finisher/VERSION
+5 error EPACKAGES Errored while collecting packages and package graph
+6 error JSONError: Unexpected token } in JSON at position 888 while parsing near '...tier": "^1.12.0",  },  "repository": {...' in package.json
+6 error     at module.exports (/Users/Home/.config/yarn/global/node_modules/lerna/node_modules/parse-json/index.js:26:19)
+6 error     at parse (/Users/Home/.config/yarn/global/node_modules/lerna/node_modules/load-json-file/index.js:8:29)
+6 error     at Function.module.exports.sync.fp [as sync] (/Users/Home/.config/yarn/global/node_modules/lerna/node_modules/load-json-file/index.js:11:29)
+6 error     at Function.module.exports.sync (/Users/Home/.config/yarn/global/node_modules/lerna/node_modules/read-pkg/index.js:40:25)
+6 error     at /Users/Home/.config/yarn/global/node_modules/lerna/lib/PackageUtilities.js:138:47
+6 error     at Array.forEach (<anonymous>)
+6 error     at /Users/Home/.config/yarn/global/node_modules/lerna/lib/PackageUtilities.js:132:86
+6 error     at Array.forEach (<anonymous>)
+6 error     at Function.getPackages (/Users/Home/.config/yarn/global/node_modules/lerna/lib/PackageUtilities.js:131:22)
