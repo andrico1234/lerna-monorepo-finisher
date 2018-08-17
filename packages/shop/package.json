@@ -34,7 +34,6 @@
   "engines": {
     "node": "8.11.2"
   },
-  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
