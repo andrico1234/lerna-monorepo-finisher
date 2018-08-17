@@ -4,7 +4,6 @@
   "version": "1.0.2",
   "author": "Andrico Karoulla <karoulla.andrico@gmail.com>",
   "dependencies": {
-    "@lerna-monorepo/blog": "^1.0.2",
     "@lerna-monorepo/shared-ui": "^1.0.1",
     "dotenv": "^6.0.0",
     "gatsby": "^1.9.247",
