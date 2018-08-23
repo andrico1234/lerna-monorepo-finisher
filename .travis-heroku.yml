@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+- 8.11.2
+
+cache: yarn
+
+install:
+- yarn global add lerna jest
+- lerna bootstrap
+
+matrix:
+  include:
+  - name: Blog Pipeline
+    env: PACKAGE_LOCATION=packages/blog PACKAGE_NAME=lerna-monorepo-blog
+  - name: Shop Pipeline
+    env: PACKAGE_LOCATION=packages/shop PACKAGE_NAME=lerna-monorepo-shop
+
+script:
+- cd $PACKAGE_LOCATION
+- yarn test
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "SL/gkHX0NNAPgB+O/HKvnmdfXeX0LTtaPXpeQ8WChBl9Zlj47cPM3EdRRaMEflJIaFpM4wGxxiXYI8muJ/HZjOdVsZl/EC8ieYyNyNwT2B5jMXJK9mEbw5CPsPOsoiKSQOmYdBRPlVP04z/rw6V9UxmqF81Mmdh/l983/Lo/ppAadYy91BGuP5oPKhfRQn9fLezKlOQFeIBpbwf1BHSVxZC4Ov0XXQaPiWaAG6ZsGIcbeQw4SOSoG8h6iiyuKwHKta2u7c/jVu3NgR3fyeUYhgvdU3CGN6zYTzcSc6kbO3uGdDxYuTd04q/wKGEHJAHtxWLHe+OFF20zO5sBD8NbmV6GuNo1CNZJWaU/F8tnd+1nqccuP4zuwnCYMJfM2cj4D+1XpYWN0vTUnR2JV7Wo2o3hVNlU30e12bcqYUqxMHnHCt0D29g+uW5CgfJy3KBEiukALNxr/6ihWpX6bW6DphZ+/HdHGMXyaDLppJow8FKHTtM16YFbcEw8lLI6Kna9MNqPoPEouQSku1QyS+f21X51PimkQ8RexM0pKumYy+gyvFN5YCitPzf9ApOy+d3l13Ogw5g5xTfvFlkysts7iY4Pl9kmWyjjNmOasw4D2lnLSERh7O+sphXh/h1jRhhl+TXEQB79RSqxS11dIlCCBj5mwitBTudi1mb9mJE10gc="
+  app: $PACKAGE_NAME
+  skip_cleanup: true
