@@ -15,6 +15,7 @@
     "gatsby-react-router-scroll": "^1.0.18",
     "react": "^16.4.2",
     "react-helmet": "^5.2.0",
+    "serve":"^10.0.0",
     "styled-components": "^3.3.3"
   },
   "keywords": [
@@ -22,7 +23,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "start": "gatsby develop",
+    "start": "serve public",
     "build": "gatsby build",
     "develop": "gatsby develop -p 8001",
     "format": "prettier --write 'src/**/*.js'",
