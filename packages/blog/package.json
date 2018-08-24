@@ -27,8 +27,8 @@
     "start": "serve public",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "jest test --config ../../jest-config.json"
+    "test": "jest test --config ../../jest-config.json",
+    "now-build": "echo 'Built on Travis CI'"
   },
   "devDependencies": {
     "prettier": "^1.12.0",
