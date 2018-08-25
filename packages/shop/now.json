@@ -1,5 +1,15 @@
 {
   "files": [
-    "build"
-  ]
+    "public",
+    "package.json",
+    "yarn.lock"
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "engines": {
+    "node": "10.9.0"
+  },
+  "alias": "lerna-monorepo-shop",
+  "public": true
 }

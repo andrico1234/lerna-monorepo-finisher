@@ -24,11 +24,11 @@
   ],
   "license": "MIT",
   "scripts": {
-    "start": "serve public",
+    "start": "serve public/",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "test": "jest test --config ../../jest-config.json",
-    "now-build": "echo 'Built on Travis CI'"
+    "now-build": "echo 'Built on Travis CI'",
+    "test": "jest test --config ../../jest-config.json"
   },
   "devDependencies": {
     "prettier": "^1.12.0",
