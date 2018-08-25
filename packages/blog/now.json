@@ -1,4 +1,5 @@
 {
+  "type": "static",
   "alias": "lerna-monorepo-blog",
   "static": {
     "public": "public"

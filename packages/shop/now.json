@@ -1,4 +1,5 @@
 {
+  "type": "static",
   "alias": "lerna-monorepo-shop",
   "static": {
     "public": "public"
