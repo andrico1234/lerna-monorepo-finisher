@@ -1,16 +1,6 @@
 {
-  "files": [
-    "public",
-    "package.json",
-    ".env.production",
-    "yarn.lock"
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "engines": {
-    "node": "10.9.0"
-  },
   "alias": "lerna-monorepo-blog",
-  "public": true
+  "static": {
+    "public": "public"
+  }
 }
