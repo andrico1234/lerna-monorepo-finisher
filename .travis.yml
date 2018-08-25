@@ -22,6 +22,6 @@ script:
 
 deploy:
   provider: script
-  script: now public --token $NOW_TOKEN
+  script: now public --alias=$PACKAGE_NAME --token $NOW_TOKEN
   skip_cleanup: true
   app: $PACKAGE_NAME

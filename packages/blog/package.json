@@ -27,7 +27,6 @@
     "start": "serve public/",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "now-build": "echo 'Built on Travis CI'",
     "test": "jest test --config ../../jest-config.json"
   },
   "devDependencies": {

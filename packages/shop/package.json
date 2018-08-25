@@ -24,7 +24,6 @@
   "license": "MIT",
   "scripts": {
     "start": "serve public",
-    "now-build": "echo 'Built on Travis CI'",
     "build": "gatsby build",
     "develop": "gatsby develop -p 8001",
     "format": "prettier --write 'src/**/*.js'",
