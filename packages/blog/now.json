@@ -3,5 +3,6 @@
   "alias": "lerna-monorepo-blog",
   "static": {
     "public": "public"
-  }
+  },
+  "public": true
 }
